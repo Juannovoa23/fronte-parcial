@@ -1,0 +1,30 @@
+<div>
+  <h2>{{ isEditMode ? 'Editar Contrato' : 'Crear Contrato' }}</h2>
+  <form (ngSubmit)="saveContrato()">
+    <label for="identificador">Identificador:</label>
+    <input [(ngModel)]="contrato.identificador" name="identificador" required />
+
+    <label for="valor">Valor:</label>
+    <input [(ngModel)]="contrato.valor" name="valor" required />
+
+    <label for="nombreContratante">Nombre del Contratante:</label>
+    <input [(ngModel)]="contrato.nombreContratante" name="nombreContratante" required />
+
+    <label for="documentoContratante">Documento del Contratante:</label>
+    <input [(ngModel)]="contrato.documentoContratante" name="documentoContratante" required />
+
+    <label for="nombreContratantista">Nombre del Contratantista:</label>
+    <input [(ngModel)]="contrato.nombreContratantista" name="nombreContratantista" required />
+
+    <label for="documentoContratantista">Documento del Contratantista:</label>
+    <input [(ngModel)]="contrato.documentoContratantista" name="documentoContratantista" required />
+
+    <label for="fechaInicial">Fecha Inicial:</label>
+    <input [(ngModel)]="contrato.fechaInicial" name="fechaInicial" type="date" required />
+
+    <label for="fechaFinal">Fecha Final:</label>
+    <input [(ngModel)]="contrato.fechaFinal" name="fechaFinal" type="date" required />
+
+    <button type="submit">Guardar</button>
+  </form>
+</div>

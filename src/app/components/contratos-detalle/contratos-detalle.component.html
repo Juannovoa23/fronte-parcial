@@ -1,0 +1,12 @@
+<div *ngIf="contrato">
+  <h2>Detalle del Contrato</h2>
+  <p><strong>Identificador:</strong> {{ contrato.identificador }}</p>
+  <p><strong>Valor:</strong> {{ contrato.valor }}</p>
+  <p><strong>Contratante:</strong> {{ contrato.nombreContratante }}</p>
+  <p><strong>Documento Contratante:</strong> {{ contrato.documentoContratante }}</p>
+  <p><strong>Contratantista:</strong> {{ contrato.nombreContratantista }}</p>
+  <p><strong>Documento Contratantista:</strong> {{ contrato.documentoContratantista }}</p>
+  <p><strong>Fecha Inicial:</strong> {{ contrato.fechaInicial | date }}</p>
+  <p><strong>Fecha Final:</strong> {{ contrato.fechaFinal | date }}</p>
+  <a routerLink="/contratos">Volver a la lista</a>
+</div>

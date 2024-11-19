@@ -1,0 +1,10 @@
+<div>
+  <h2>Lista de Contratos</h2>
+  <ul>
+    <li *ngFor="let contrato of contratos">
+      {{ contrato.identificador }} - {{ contrato.nombreContratante }}
+      <a [routerLink]="['/contratos', contrato.id]">Ver detalle</a>
+    </li>
+  </ul>
+  <a routerLink="/crear-contrato">Crear nuevo contrato</a>
+</div>
